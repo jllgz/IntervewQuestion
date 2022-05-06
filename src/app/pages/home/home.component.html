@@ -1,0 +1,21 @@
+<div class="container my-4">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center my-5">
+                
+                <h1>Interview Questions Category</h1>
+            </div>
+            <div class="border border-2 border-dark rounded p-3 mb-4">
+                <div class="d-flex justify-content-center align-items-center" style="padding: 100px">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                         <div *ngFor="let category of categories">
+                        <iqa-category-buttons [category]="category"></iqa-category-buttons>
+                    </div>
+                    <button class="btn btn-secondary btn-lg mt-5" (click)="resetQuestions()">Reset Questions</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
